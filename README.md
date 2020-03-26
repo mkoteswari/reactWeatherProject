@@ -23,7 +23,7 @@ function App() {
        console.log("query"+query);
        console.log(`${api.weatherlink}?q=${query}&units=metrics&appid=${api.keyid}`);
              fetch(`${api.weatherlink}?q=${query}&units=metrics&appid=${api.keyid}`)
-              .then(res => res.json())
+              .then(res => res.json()) 
               .then(body => {
                 console.log(body)
                  setWeather(body);
@@ -87,3 +87,4 @@ function App() {
 }
 
 export default App;
+//react program for weather informatio
